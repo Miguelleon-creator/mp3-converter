@@ -60,7 +60,8 @@ def convert():
 
 if __name__ == "__main__":
     print("Loading server Flask...")
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
 
 # Nota importante sobre el nombre del archivo descargado:
 # 
