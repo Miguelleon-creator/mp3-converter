@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mp3-converter
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    plan: free
+    runtime: python
+    region: oregon
