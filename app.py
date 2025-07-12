@@ -58,10 +58,15 @@ def convert():
 
     return send_from_directory('downloads', mp3_filename, as_attachment=True)
 
+@app.errorhandler(Exception)
+def handle_exception(e):
+    return f"Error interno: {str(e)}", 500
+
 if __name__ == "__main__":
     print("Loading server Flask...")
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
+
 
 # Nota importante sobre el nombre del archivo descargado:
 # 
