@@ -1,0 +1,114 @@
+:root{
+    --color-rojo: #FF0000;
+    --color-blanco: #FFFFFF;
+    --color-gris: #b5bac9;
+    --color-negro: #000000;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: 1s;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--color-blanco);
+    color: var(--color-rojo);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:  0 10px rgba(255,255,255,0.1);
+    width: 30%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    width: 65%;
+    height: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 7px;
+    padding: 10px 20px;
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: var(--color-gris);
+    color: var(--color-negro);
+    transition: 0.5s;
+}
+
+#menssageScript {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-negro);
+}
+
+/*Phone form*/
+@media (max-width: 478px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container {
+        width: 200px;
+    }
+
+    button:hover {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container {
+        width: 200px;
+    }
+
+    button:hover {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    }
+}
